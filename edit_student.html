@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Student</title>
+</head>
+<body>
+    <h1>Edit Student</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <p>
+            Name:<br>
+            <input type="text" name="name" value="{{ student.name }}">
+        </p>
+
+        <p>
+            Email:<br>
+            <input type="email" name="email" value="{{ student.email }}">
+        </p>
+
+        <p>
+            Age:<br>
+            <input type="number" name="age" value="{{ student.age }}">
+        </p>
+
+        <button type="submit">Update</button>
+    </form>
+
+    <br>
+    <a href="/">Back</a>
+</body>
+</html>
