@@ -1,2 +1,10 @@
 # Web-Project
-Web Project
+django-CRUD Operation
+
+
+
+
+
+
+
+
